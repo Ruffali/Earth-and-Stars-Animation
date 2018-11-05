@@ -1,0 +1,67 @@
+.edit_popup {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 9999;
+  display: none;
+  background: rgba(0, 0, 0, 0.7); }
+  .edit_popup .edit_popup_inner {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 830px;
+    padding: 30px;
+    max-height: 90%;
+    overflow: hidden;
+    overflow-y: auto;
+    background: #fff;
+    border-radius: 10px; }
+    .edit_popup .edit_popup_inner .title {
+      margin: 0 0 19px;
+      font: 36px/1 OpenSans, sans-serif;
+      color: #293133;
+      text-align: center; }
+    .edit_popup .edit_popup_inner .btns {
+      padding: 30px 0 0;
+      text-align: center; }
+      .edit_popup .edit_popup_inner .btns button {
+        display: inline-block;
+        border: none;
+        width: 100px;
+        height: 35px;
+        margin: 0 15px;
+        font: 14px/35px OpenSans, sans-serif;
+        color: #293133;
+        text-align: center;
+        border-radius: 18px;
+        background-image: linear-gradient(90deg, #fff 0%, #fff 100%);
+        box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15);
+        transition: background 800ms ease; }
+        .edit_popup .edit_popup_inner .btns button:hover {
+          background-image: linear-gradient(90deg, #4db8ae 0%, #71daca 100%);
+          color: white; }
+    .edit_popup .edit_popup_inner i {
+      display: none; }
+    .edit_popup .edit_popup_inner p {
+      color: white;
+      text-align: center;
+      font-size: 3ch;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-shadow: 0 1px 0 #c9cfce, 0 2px 0 #bcc2c2, 0 3px 0 #afb6b6, 0 4px 0 #a4adac, 0 5px 0 #9fa8a7, 0 6px 0 #99a3a2, 0 7px 0 #97a1a0, 0 8px 0 #949e9d, 0 0 5px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.2), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.3); }
+
+.active {
+  display: block !important; }
+
+@media screen and (min-width: 320px) and (max-width: 1300px) {
+  .edit_popup .edit_popup_inner {
+    width: 281px;
+    max-height: 60%; }
+    .edit_popup .edit_popup_inner p {
+      font-size: 1.4ch; } }
+
+/*# sourceMappingURL=popUp.css.map */

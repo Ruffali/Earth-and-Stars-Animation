@@ -1,0 +1,258 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: black;
+  overflow-x: hidden; }
+
+#rounds {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 2%; }
+  #rounds .container-fluid .row .col-md-12 .rounds {
+    position: relative;
+    margin: 0 auto;
+    width: 50%;
+    height: 700px;
+    border-radius: 50%;
+    animation: planets 10s linear; }
+    #rounds .container-fluid .row .col-md-12 .rounds img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 10%;
+      width: 0%;
+      height: 0%;
+      animation-fill-mode: both;
+      transition: all linear 3s; }
+    #rounds .container-fluid .row .col-md-12 .rounds .star {
+      position: absolute;
+      top: 2%;
+      left: 45%;
+      transform: translate(-50%, -50%);
+      width: 4%;
+      height: 27px;
+      background: white;
+      border-radius: 50%;
+      cursor: pointer;
+      opacity: 0;
+      transition: all linear 10s;
+      animation: visible 10s linear;
+      animation-fill-mode: both;
+      transition: all linear 3s;
+      animation-delay: 10s; }
+      #rounds .container-fluid .row .col-md-12 .rounds .star p {
+        display: none; }
+      #rounds .container-fluid .row .col-md-12 .rounds .star i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 3ch;
+        color: white;
+        transition: all linear 0.3s;
+        animation: box 1s linear infinite; }
+    #rounds .container-fluid .row .col-md-12 .rounds .star2 {
+      top: 4%;
+      left: 62%;
+      animation-delay: 10.5s; }
+    #rounds .container-fluid .row .col-md-12 .rounds .star3 {
+      top: 11%;
+      left: 78%;
+      animation-delay: 11s; }
+    #rounds .container-fluid .row .col-md-12 .rounds .star4 {
+      top: 23%;
+      left: 91%;
+      animation-delay: 11.5s; }
+    #rounds .container-fluid .row .col-md-12 .rounds .star5 {
+      top: 39%;
+      left: 98%;
+      animation-delay: 12s; }
+    #rounds .container-fluid .row .col-md-12 .rounds .star6 {
+      top: 58%;
+      left: 99%;
+      animation-delay: 12.5s; }
+    #rounds .container-fluid .row .col-md-12 .rounds .star7 {
+      top: 74%;
+      left: 94%;
+      animation-delay: 13s; }
+    #rounds .container-fluid .row .col-md-12 .rounds .star8 {
+      top: 87%;
+      left: 84%;
+      animation-delay: 13.5s; }
+    #rounds .container-fluid .row .col-md-12 .rounds .star9 {
+      top: 96%;
+      left: 71%;
+      animation-delay: 14s; }
+    #rounds .container-fluid .row .col-md-12 .rounds .star10 {
+      top: 99%;
+      left: 56%;
+      animation-delay: 14.5s; }
+    #rounds .container-fluid .row .col-md-12 .rounds .star11 {
+      top: 97%;
+      left: 39%;
+      animation-delay: 15s; }
+    #rounds .container-fluid .row .col-md-12 .rounds .star12 {
+      top: 90%;
+      left: 23%;
+      animation-delay: 15.5s; }
+    #rounds .container-fluid .row .col-md-12 .rounds .star13 {
+      top: 78%;
+      left: 10%;
+      animation-delay: 16s; }
+    #rounds .container-fluid .row .col-md-12 .rounds .star14 {
+      top: 65%;
+      left: 2%;
+      animation-delay: 16.5s; }
+    #rounds .container-fluid .row .col-md-12 .rounds .star15 {
+      top: 50%;
+      left: 0%;
+      animation-delay: 17s; }
+    #rounds .container-fluid .row .col-md-12 .rounds .star16 {
+      top: 36%;
+      left: 3%;
+      animation-delay: 17.5s; }
+    #rounds .container-fluid .row .col-md-12 .rounds .star17 {
+      top: 23%;
+      left: 9%;
+      animation-delay: 18s; }
+    #rounds .container-fluid .row .col-md-12 .rounds .star18 {
+      top: 12%;
+      left: 19%;
+      animation-delay: 18.5s; }
+    #rounds .container-fluid .row .col-md-12 .rounds .star19 {
+      top: 5%;
+      left: 31%;
+      animation-delay: 19s; }
+
+.mySignature {
+  position: fixed;
+  bottom: 0%;
+  right: 0%;
+  width: 15%;
+  height: 150px; }
+  .mySignature img {
+    width: 100%;
+    height: 100%; }
+
+.visible {
+  visibility: visible !important; }
+
+@keyframes visible {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes box {
+  from {
+    text-shadow: 0px 0px 0px white; }
+  to {
+    text-shadow: 0px 0px 37px white; } }
+@keyframes planets {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+@keyframes planetsRotate {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+@media screen and (min-width: 320px) and (max-width: 1300px) {
+  #rounds .container-fluid .row .col-md-12 .rounds {
+    width: 98%;
+    height: 287px; }
+    #rounds .container-fluid .row .col-md-12 .rounds .star {
+      width: 0%; }
+      #rounds .container-fluid .row .col-md-12 .rounds .star i {
+        font-size: 1ch; } }
+@media screen and (min-width: 360px) and (max-width: 767px) {
+  #rounds .container-fluid .row .col-md-12 .rounds {
+    width: 90%;
+    height: 287px; } }
+@media screen and (min-width: 411px) and (max-width: 767px) {
+  #rounds .container-fluid .row .col-md-12 .rounds {
+    width: 80%;
+    height: 287px; } }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #rounds .container-fluid .row .col-md-12 .rounds {
+    width: 50%;
+    height: 380px; } }
+@media screen and (min-width: 1024px) and (max-width: 1300px) {
+  #rounds .container-fluid .row .col-md-12 .rounds {
+    width: 50%;
+    height: 500px; } }
+@media screen and (min-width: 2560px) and (max-width: 2800px) {
+  #rounds .container-fluid .row .col-md-12 .rounds {
+    width: 30%; } }
+.edit_popup {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 9999;
+  display: none;
+  background: rgba(0, 0, 0, 0.7); }
+  .edit_popup .edit_popup_inner {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 830px;
+    padding: 30px;
+    max-height: 90%;
+    overflow: hidden;
+    overflow-y: auto;
+    background: #fff;
+    border-radius: 10px; }
+    .edit_popup .edit_popup_inner .title {
+      margin: 0 0 19px;
+      font: 36px/1 OpenSans, sans-serif;
+      color: #293133;
+      text-align: center; }
+    .edit_popup .edit_popup_inner .btns {
+      padding: 30px 0 0;
+      text-align: center; }
+      .edit_popup .edit_popup_inner .btns button {
+        display: inline-block;
+        border: none;
+        width: 100px;
+        height: 35px;
+        margin: 0 15px;
+        font: 14px/35px OpenSans, sans-serif;
+        color: #293133;
+        text-align: center;
+        border-radius: 18px;
+        background-image: linear-gradient(90deg, #fff 0%, #fff 100%);
+        box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15);
+        transition: background 800ms ease; }
+        .edit_popup .edit_popup_inner .btns button:hover {
+          background-image: linear-gradient(90deg, #4db8ae 0%, #71daca 100%);
+          color: white; }
+    .edit_popup .edit_popup_inner i {
+      display: none; }
+    .edit_popup .edit_popup_inner p {
+      color: white;
+      text-align: center;
+      font-size: 3ch;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-shadow: 0 1px 0 #c9cfce, 0 2px 0 #bcc2c2, 0 3px 0 #afb6b6, 0 4px 0 #a4adac, 0 5px 0 #9fa8a7, 0 6px 0 #99a3a2, 0 7px 0 #97a1a0, 0 8px 0 #949e9d, 0 0 5px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.2), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.3); }
+
+.active {
+  display: block !important; }
+
+@media screen and (min-width: 320px) and (max-width: 1300px) {
+  .edit_popup .edit_popup_inner {
+    width: 281px;
+    max-height: 60%; }
+    .edit_popup .edit_popup_inner p {
+      font-size: 1.4ch; } }
+
+/*# sourceMappingURL=style.css.map */
